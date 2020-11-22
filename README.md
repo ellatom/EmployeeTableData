@@ -1,4 +1,5 @@
 ## Employee Table App
+Open https://affectionate-perlman-5562fb.netlify.app/ to view it in the browser.
 
 ### `Description:`
 <ul>
