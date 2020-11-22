@@ -37,7 +37,7 @@ const setTitleValue=(key)=>
 
 //set birthdate and age by birthdate
 const setBirthdateAndAge=(obj,key,value)=>{
-    
+
     let date = getBirthdate(value);
     obj[key] = date.toLocaleDateString();
     obj["age"] = getAge(date);

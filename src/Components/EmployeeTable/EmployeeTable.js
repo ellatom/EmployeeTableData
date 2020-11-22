@@ -37,6 +37,7 @@ class EmployeeTable extends Component {
     getRows = () => {
         const { tableData } = this.state;
         let filteredData = utilsData().getFilteredDataByKeys(tableData);
+
         return filteredData;
     }
 
