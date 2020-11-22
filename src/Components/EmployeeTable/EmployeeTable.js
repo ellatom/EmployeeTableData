@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import MaterialTable from "material-table";
-import utilsData from '../Utilities/data-util-functions.js';
-import utilsOptions from '../Utilities/table-options-util-function.js';
-const data = require('../Data/data.json');
+import utilsData from '../../Utilities/data-util-functions.js';
+import utilsOptions from '../../Utilities/table-options-util-function.js';
+
+const data = require('../../Data/data.json');
 
 
 class EmployeeTable extends Component {
@@ -14,7 +15,7 @@ class EmployeeTable extends Component {
         await this.setState({ tableData: data });
     }
     //set table title
-    getTitle =()=>{
+    getTitle = () => {
         return "Employees";
     }
 
@@ -34,19 +35,19 @@ class EmployeeTable extends Component {
 
     //get table rows data
     getRows = () => {
-        const {tableData}=this.state;
+        const { tableData } = this.state;
         let filteredData = utilsData().getFilteredDataByKeys(tableData);
         return filteredData;
     }
 
     render() {
         return (
-                <MaterialTable
-                    title={this.getTitle()}
-                    columns={this.getHeaders()}
-                    data={this.getRows()}
-                    options={utilsOptions().setOptions()}
-                />
+            <MaterialTable
+                title={this.getTitle()}
+                columns={this.getHeaders()}
+                data={this.getRows()}
+                options={utilsOptions().setOptions()}
+            />
         );
     }
 
