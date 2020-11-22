@@ -13,6 +13,7 @@
 <li>The data can be grouped by one or more columns by  dragging the header/s above the header row.
 <li>You can filter and export to csv or pdf.
 <li>Display of data can be by 5/10/20 rows per page.
+<li>Sorting is available.
 <li>Pagination is available.
 <li>The app is responsive.
 <li>I have used material-table from material ui.
