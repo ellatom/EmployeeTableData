@@ -11,8 +11,8 @@ class EmployeeTable extends Component {
     state = { tableData: [] };
 
     //set table data from json
-    async componentDidMount() {
-        await this.setState({ tableData: data });
+    componentDidMount() {
+        this.setState({ tableData: data });
     }
     //set table title
     getTitle = () => {
